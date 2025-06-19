@@ -1,8 +1,13 @@
 import React from 'react'
-
+import Navbar from '../../components/Navbar/Navbar'
 const historypage = () => {
   return (
-    <div>historypage</div>
+    <>
+    <Navbar />
+    <div>
+      <h1>History Page</h1>
+    </div>
+    </>
   )
 }
 

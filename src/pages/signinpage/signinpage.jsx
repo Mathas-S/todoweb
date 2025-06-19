@@ -1,26 +1,25 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
-
+import {useNavigate} from 'react-router-dom'
+import './signinpage.css'
+import { Link } from 'react-router-dom'
 
 const signinpage = () => {
   const navigate = useNavigate();
+  const handleSignIn = () => {
+    navigate('/home');
+  };
 
-
-const handleSignIn = () => {
-  navigate('/home');
-}
-return(
-  <div className="flex flex-col items-center justify-center h-screen">
-      <h1 className="text-3xl font-bold mb-6">Sign In</h1>
-      <button
-        onClick={handleSignIn}
-        className="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition"
-      >
-        Sign In
-      </button>
+  return(
+    <div className='signin-container'>
+      <h1>Sign In</h1>
+      <input type="text" placeholder='Email' className='signin-input' />
+      <input type="password" placeholder='Password' className='signin-input' />
+      <button onClick={handleSignIn} className='signin-button'>Sign In</button>
+      <li className='signup-button'><Link to="/register">Register</Link></li>
+      
+      
     </div>
-)
+  )
 }
 
-
-export default signinpage;
+export default signinpage
