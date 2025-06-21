@@ -8,9 +8,9 @@ const TodoCard = ({title, description, onComplete, onEdit, onDelete}) => {
         <p className='card-description'>{description}
         </p>
         <div className='card-buttons'>
-            <button onClick={onComplete}>Complete</button>
-            <button onClick={onEdit}>Edit</button>
-            <button onClick={onDelete}>Delete</button>
+            <button onClick={onComplete} className='complete-button'>Complete</button>
+            <button onClick={onEdit} className='edit-button'>Edit</button>
+            <button onClick={onDelete} className='delete-button'>Delete</button>
         </div>
     </div>
   )
