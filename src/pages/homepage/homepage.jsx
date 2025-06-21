@@ -6,7 +6,7 @@ import TodoCard from '../../components/TodoCard/TodoCard'
 
 const homepage = () => {
   const handleComplete = () => alert('Completed');
-  const handleFinish = () => alert('Finished');
+  const handleEdit = () => alert('Edited');
   const handleDelete = () => alert('Deleted');
 
   return (
@@ -16,7 +16,7 @@ const homepage = () => {
           title='My Task'
           description='this is a description of this task'
           onComplete={handleComplete}
-          onFinish={handleFinish}
+          onEdit={handleEdit}
           onDelete={handleDelete}
         />
       </div>

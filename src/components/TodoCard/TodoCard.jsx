@@ -1,7 +1,7 @@
 import React from 'react'
 import './TodoCard.css'
 
-const TodoCard = ({title, description, onComplete, onFinish, onDelete}) => {
+const TodoCard = ({title, description, onComplete, onEdit, onDelete}) => {
   return (
     <div className='card-container'>
         <h2 className='card-title'>{title}</h2>
@@ -9,7 +9,7 @@ const TodoCard = ({title, description, onComplete, onFinish, onDelete}) => {
         </p>
         <div className='card-buttons'>
             <button onClick={onComplete}>Complete</button>
-            <button onClick={onFinish}>Finish</button>
+            <button onClick={onEdit}>Edit</button>
             <button onClick={onDelete}>Delete</button>
         </div>
     </div>
