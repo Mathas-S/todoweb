@@ -3,7 +3,6 @@ import Navbar from '../../components/Navbar/Navbar'
 const historypage = () => {
   return (
     <>
-    <Navbar />
     <div>
       <h1>History Page</h1>
     </div>

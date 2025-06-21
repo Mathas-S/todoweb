@@ -6,7 +6,6 @@ const addpage = () => {
 
   return (
     <>
-      <Navbar />
       <div className='add-container'>
         <h1>Add New TODO List</h1>
         <input type="text" placeholder='Name' className='add-input' />

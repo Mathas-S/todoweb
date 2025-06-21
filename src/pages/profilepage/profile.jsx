@@ -4,7 +4,6 @@ import './profile.css'
 const profile = () => {
   return (
     <>
-    <Navbar />
     <div className='profile-container'>
       <h1>Profile Page</h1>
     </div>
