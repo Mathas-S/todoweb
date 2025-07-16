@@ -12,8 +12,10 @@ const Profile = () => {
 
   return (
     <>
+      <h1>Profile Page</h1>
       <div className='profile-container'>
-        <h1>Profile Page</h1>
+        <h2>Account</h2>
+        <p>user.email</p>
         <button onClick={handleLogout} className="logout-button">Logout</button>
       </div>
     </>
